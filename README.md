@@ -190,6 +190,16 @@ flowchart LR
 
 ---
 
+## 车辆编号 OCR 与违停检测快速接入
+
+如果需要在本地脚本中复用车辆编号 OCR 与停车违停检测能力，可参考详细说明文档：
+
+- [车辆编号 OCR 与违停检测接入指南](vla_latest/docs/parking_ocr_parking_violation_usage.md)
+
+文档涵盖任务 JSON 区域解析、车辆编号检测、违停检查与发布数据结构示例，以及测试运行方式。
+
+---
+
 ## 常见问题和处理
 
 - OCR 太慢/显存不足：
