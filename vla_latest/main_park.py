@@ -6,6 +6,12 @@
 - 路径会保存到 navigation_path.png
 """
 
+import os
+import sys
+LOCAL_METACAR_PATH = os.path.join(os.path.dirname(__file__), "autodrive_api_python-1.0.0")
+if os.path.isdir(LOCAL_METACAR_PATH) and LOCAL_METACAR_PATH not in sys.path:
+    sys.path.insert(0, LOCAL_METACAR_PATH)
+
 import time
 import logging
 from typing import Dict

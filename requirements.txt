@@ -1,0 +1,12 @@
+torch
+opencv-python
+numpy
+pillow
+shapely
+pyclipper
+loguru
+keyboard
+scipy
+PyYAML
+tqdm
+six

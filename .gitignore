@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.so
+*.egg-info/
+*.dist-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+*.env/
+pip-wheel-metadata/
+
+# Testing and type checking
+.pytest_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

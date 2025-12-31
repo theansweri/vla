@@ -3,6 +3,12 @@ VLA主程序 - 四目相机适配版
 正确集成OCR、任务控制器和车辆控制，支持四目相机
 """
 
+import os
+import sys
+LOCAL_METACAR_PATH = os.path.join(os.path.dirname(__file__), "autodrive_api_python-1.0.0")
+if os.path.isdir(LOCAL_METACAR_PATH) and LOCAL_METACAR_PATH not in sys.path:
+    sys.path.insert(0, LOCAL_METACAR_PATH)
+
 import logging
 import keyboard
 import time

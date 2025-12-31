@@ -13,6 +13,10 @@ import math
 from PIL import Image, ImageDraw, ImageFont
 import os
 from geometry import Vector2, Vector3, euler_to_vector2, yaw_to_radians
+import sys
+base_dir = os.path.dirname(os.path.abspath(__file__))
+if base_dir not in sys.path:
+    sys.path.insert(0, base_dir)
 
 # PytorchPaddleOCR引擎导入
 try:

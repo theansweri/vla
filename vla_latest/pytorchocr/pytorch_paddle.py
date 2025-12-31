@@ -130,9 +130,10 @@ class PytorchPaddleOCR(TextSystem):
         device = get_device()
         print(f"当前使用设备: {device}")
 
-        kwargs["det_model_path"] = "models/ptocr_v5_mobile_det.pth"
-        kwargs["rec_model_path"] = "models/ptocr_v5_mobile_rec.pth"
-        kwargs["rec_char_dict_path"] = "models/ppocrv5_dict.txt"
+        models_dir = root_dir / "models"
+        kwargs["det_model_path"] = str(models_dir / "ptocr_v5_mobile_det.pth")
+        kwargs["rec_model_path"] = str(models_dir / "ptocr_v5_mobile_rec.pth")
+        kwargs["rec_char_dict_path"] = str(models_dir / "ppocrv5_dict.txt")
         # kwargs['rec_batch_num'] = 8
 
         kwargs["device"] = device
